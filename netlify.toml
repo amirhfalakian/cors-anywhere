@@ -1,14 +1,9 @@
 [build]
-  command = "npm install && npm start"
-  publish = "server.js"
-
+  command = "npm run build"
+  publish = "build/"
 [dev]
-  command = "npm start"
-  publish = "server.js"
-  functions = "api/"
-  environment = { TARGET_URL = "https://test.bilifo.com" }
-
+  command = "npm run start"
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
+  from = "/corsproxy/*"
+  to = "/corsproxy/:splat"
   status = 200
