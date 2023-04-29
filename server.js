@@ -47,3 +47,11 @@ cors_proxy.createServer({
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
+
+
+// These are the domains that are allowed to make CORS requests.
+var whitelist = [
+  'http://localhost:3000',
+  'https://bilifo-task.netlify.app'
+];
+
