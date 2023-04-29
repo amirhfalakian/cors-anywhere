@@ -1,5 +1,10 @@
+[build]
+  command = "npm start"
+  publish = "server.js"
+
 [dev]
-  command = "npm install && npm start"
+  command = "npm start"
+  publish = "server.js"
   functions = "api/"
   environment = { TARGET_URL = "https://test.bilifo.com" }
 
