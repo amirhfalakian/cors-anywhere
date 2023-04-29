@@ -1,7 +1,7 @@
 [dev]
   command = "npm install && npm start"
   functions = "api/"
-  environment = { TARGET_URL = "https://example.com" }
+  environment = { TARGET_URL = "https://test.bilifo.com" }
 
 [[redirects]]
   from = "/api/*"
