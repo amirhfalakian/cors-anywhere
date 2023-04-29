@@ -1,0 +1,9 @@
+[dev]
+  command = "npm install && npm start"
+  functions = "api/"
+  environment = { TARGET_URL = "https://example.com" }
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
