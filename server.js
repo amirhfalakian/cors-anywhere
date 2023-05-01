@@ -8,7 +8,7 @@ var port = process.env.PORT || 8080;
 // immediate abuse (e.g. denial of service). If you want to block all origins except for some,
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
-var originWhitelist = [  'https://cors-proxy.netlify.app',  'http://localhost:3000'];
+var originWhitelist = [  'https://bilifo-proxy.netlify.app',  'http://localhost:3000'];
 
 function parseEnvList(env) {
   if (!env) {
