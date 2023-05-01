@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/cors-proxy.js/:splat"
-  status = 200
